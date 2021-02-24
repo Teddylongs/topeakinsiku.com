@@ -15,3 +15,13 @@ code {
 .navbar-brand .logo {
   max-width: 250px;
 }
+
+#introduction {
+  background: url('./assets/images/intro-bkg.jpg') center no-repeat;
+  background-size: 100% 100%;
+}
+
+#meet-tope {
+  background: url('./assets/images/meet-tope-bkg.jpg') center no-repeat;
+  background-size: 100% 100%;
+}
