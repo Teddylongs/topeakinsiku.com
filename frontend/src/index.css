@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -16,12 +16,51 @@ code {
   max-width: 250px;
 }
 
+.hero img {
+  width: 100%;
+  object-position: center;
+}
+
 #introduction {
-  background: url('./assets/images/intro-bkg.jpg') center no-repeat;
+  background: url("./assets/images/intro-bkg.jpg") center no-repeat;
   background-size: 100% 100%;
 }
 
 #meet-tope {
-  background: url('./assets/images/meet-tope-bkg.jpg') center no-repeat;
+  background: url("./assets/images/meet-tope-bkg.jpg") center no-repeat;
   background-size: 100% 100%;
+}
+
+.bg-p-pink {
+  background: url("./assets/images/subscribe-bkg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.cta {
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+
+  padding: 1.2rem 1.7rem;
+  background: none;
+  transition: all 0.4s ease;
+  border: solid 2px #4b4b4b;
+  text-align: center;
+}
+
+.cta:hover {
+  background: #4b4b4b;
+  color: #f5f5f5;
+}
+
+.cta h5 {
+  margin: 0;
+  line-height: 1rem;
+}
+
+.offers {
+  -webkit-box-shadow: 0px 15px 15px -5px rgba(0,0,0,0.15);
+-moz-box-shadow: 0px 15px 15px -5px rgba(0,0,0,0.15);
+box-shadow: 0px 15px 15px -5px rgba(0,0,0,0.15);
 }

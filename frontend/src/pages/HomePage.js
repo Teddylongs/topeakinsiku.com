@@ -1,5 +1,6 @@
 import React from "react";
-import JoinInnerCircle from "../components/JoinInnerCircle";
+import Subscribe from "../components/Subscribe";
+import { Offers } from "../components/Cards";
 import {
   Events,
   HeroBkg,
@@ -7,14 +8,20 @@ import {
   MeetTopeImg,
   MeetTope,
   Scribble,
-  Offers,
   Podcasts,
+  OffersTitle,
   Mentorship,
+  Subscribe as SubscribeTitle,
+  Interim,
 } from "../assets/images";
 const HomePage = () => {
   return (
     <div>
-      <section id='introduction' className='my-5'>
+      <div className='hero'>
+        <img src={HeroBkg} alt='Hero Image' />
+      </div>
+
+      <section id='introduction' className='mb-5'>
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 align-items-center justify-content-center my-5'>
@@ -39,13 +46,42 @@ const HomePage = () => {
             <div className='col-sm-4'>
               <img
                 className='mx-auto img-fluid'
-                src={Offers}
+                src={OffersTitle}
                 alt="Hi there! I'm Tope"
               />
             </div>
           </div>
+          <div className='row pt-2 justify-content-center'>
+            <div className='col-sm-4 text-center'>
+              <Offers
+                img={Interim}
+                title='Podcasts'
+                imgWidth='350px'
+                imgHeight='350px'
+                url='/podcasts'
+              />
+            </div>
+            <div className='col-sm-4 text-center'>
+              <Offers
+                img={Interim}
+                title='Mentorship'
+                imgWidth='350px'
+                imgHeight='500px'
+                url='/mentorship'
+              />
+            </div>
+            <div className='col-sm-4 text-center'>
+              <Offers
+                img={Interim}
+                title='Events'
+                imgWidth='350px'
+                imgHeight='350px'
+                url='/events'
+              />
+            </div>
+          </div>
 
-          <div className='row'>
+          {/* <div className='row'>
             <div className='col-sm-4'>
               <img
                 className='mx-auto img-fluid'
@@ -54,28 +90,28 @@ const HomePage = () => {
               />
             </div>
             <div className='col-sm-4'>
-            <img
+              <img
                 className='mx-auto img-fluid'
                 src={Mentorship}
                 alt="Hi there! I'm Tope"
               />
             </div>
             <div className='col-sm-4'>
-            <img
+              <img
                 className='mx-auto img-fluid'
                 src={Events}
                 alt="Hi there! I'm Tope"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
-      <section id='meet-tope' className='my-5'>
+      <section id='meet-tope' className='mt-5'>
         <div className='container'>
           <div className='row py-5'>
             <div className='col-sm-7'>
-              <div className='text-center'>
-                <img className='img-fluid ' src={MeetTopeImg} alt='image' />
+              <div className='text-center py-2'>
+                <img className='img-fluid' src={MeetTopeImg} alt='image' />
               </div>
             </div>
             <div className='col-sm-5 py-5 px-5'>
@@ -96,7 +132,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <JoinInnerCircle />
+      <Subscribe img={SubscribeTitle} title='Join my Inner Circle' />
     </div>
   );
 };
